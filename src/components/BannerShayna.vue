@@ -5,7 +5,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 mt-5">
-                    <carousel class="product-slider">
+                    <carousel class="product-slider" :autoplay="true" :nav="false">
                         <div class="product-item">
                             <div class="pi-pic">
                                 <img src="img/mickey1.jpg" alt="" />
@@ -107,4 +107,11 @@ export default {
 </script>
 
 <style scoped>
+.product-item {
+    margin-right: 25px;
+}
+
+.pi-pic img {
+    max-height: 454px;
+}
 </style>
