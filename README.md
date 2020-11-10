@@ -1,4 +1,4 @@
-# s
+# Shayna Store make with VUE JS
 
 ## Project setup
 ```
