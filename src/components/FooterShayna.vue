@@ -7,7 +7,9 @@
                 <div class="col-lg-3">
                     <div class="footer-left text-left">
                         <div class="footer-logo">
-                            <a href="#"><img src="img/logo_website_shayna_white.png" alt="" /></a>
+                            <router-link to="/">
+                                <img src="img/logo_website_shayna_white.png" alt="" />
+                            </router-link>
                         </div>
                         <ul>
                             <li>Address: Setra Duta, Bandung</li>
