@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Product from '../views/Product.vue'
 import ShoppingCart from '../views/ShoppingCart.vue'
+import Success from '../views/Success.vue'
 
 Vue.use(VueRouter)
 
@@ -29,6 +30,11 @@ const routes = [
     path: '/cart',
     name: 'cart',
     component: ShoppingCart
+  },
+  {
+    path: '/success',
+    name: 'success',
+    component: Success
   }
 ]
 
