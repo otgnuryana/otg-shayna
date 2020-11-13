@@ -8,13 +8,13 @@
                     <div class="footer-left text-left">
                         <div class="footer-logo">
                             <router-link to="/">
-                                <img src="img/logo_website_shayna_white.png" alt="" />
+                                <img src="img/logonew@2x.png" alt="" />
                             </router-link>
                         </div>
                         <ul>
-                            <li>Address: Setra Duta, Bandung</li>
-                            <li>Phone: +628 22081996</li>
-                            <li>Email: hello.shayna@gmail.com</li>
+                            <li>Address: Sumedang, Jawa Barat</li>
+                            <li>Phone: +628 2295902418</li>
+                            <li>Email: hellp@x-series.com</li>
                         </ul>
                         <div class="footer-social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -29,9 +29,9 @@
                         <h5>Information</h5>
                         <ul>
                             <li><a href="#">About Us</a></li>
-                            <li><a href="#">Checkout</a></li>
+                            <li><a href="#">Career</a></li>
                             <li><a href="#">Contact</a></li>
-                            <li><a href="#">Serivius</a></li>
+                            <li><a href="#">Service</a></li>
                         </ul>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
 <script>
 document.write(new Date().getFullYear());
 </script> -->
-                            All rights reserved | Shayna
+                            All rights reserved | X-Series
                         </div>
                     </div>
                 </div>

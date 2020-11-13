@@ -29,19 +29,19 @@
                             <div class="product-thumbs">
                                 <carousel :dots="false" :nav="false" class="product-thumbs-track ps-slider">
                                     <div class="pt" @click="changeImage(thumbs[0])" :class="thumbs[0] == gambar_default ? 'active' : ''">
-                                        <img src="img/mickey1.jpg" alt="" />
+                                        <img src="img/view/view1.png" alt="" />
                                     </div>
 
                                     <div class="pt" @click="changeImage(thumbs[1])" :class="thumbs[1] == gambar_default ? 'active' : ''">
-                                        <img src="img/mickey2.jpg" alt="" />
+                                        <img src="img/view/view2.png" alt="" />
                                     </div>
 
                                     <div class="pt" @click="changeImage(thumbs[2])" :class="thumbs[2] == gambar_default ? 'active' : ''">
-                                        <img src="img/mickey3.jpg" alt="" />
+                                        <img src="img/view/view3.png" alt="" />
                                     </div>
 
                                     <div class="pt" @click="changeImage(thumbs[3])" :class="thumbs[3] == gambar_default ? 'active' : ''">
-                                        <img src="img/mickey4.jpg" alt="" />
+                                        <img src="img/view/view4.png" alt="" />
                                     </div>
                                 </carousel>
                             </div>
@@ -111,12 +111,12 @@ export default {
     },
     data() {
         return {
-            gambar_default: "img/mickey1.jpg",
+            gambar_default: "img/view/view1.png",
             thumbs: [
-                "img/mickey1.jpg",
-                "img/mickey2.jpg",
-                "img/mickey3.jpg",
-                "img/mickey4.jpg",
+                "img/view/view1.png",
+                "img/view/view2.png",
+                "img/view/view3.png",
+                "img/view/view4.png",
             ],
         };
     },

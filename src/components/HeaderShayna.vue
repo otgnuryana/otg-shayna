@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="ht-left">
                     <div class="mail-service">
-                        <i class="fa fa-envelope"></i> hello.shayna@gmail.com
+                        <i class="fa fa-envelope"></i> hello@x-series.com
                     </div>
                     <div class="phone-service">
                         <i class="fa fa-phone"></i> +628 2295902418
@@ -20,7 +20,7 @@
                     <div class="col-lg-2 col-md-2">
                         <div class="logo">
                             <router-link to="/">
-                                <img src="img/logo_website_shayna.png" alt="" />
+                                <img src="img/logonew.png" alt="" />
                             </router-link>
                         </div>
                     </div>
@@ -39,12 +39,12 @@
                                             <tbody>
                                                 <tr>
                                                     <td class="si-pic">
-                                                        <img src="img/select-product-1.jpg" alt="" />
+                                                        <img src="img/mouse5.png" alt="" />
                                                     </td>
                                                     <td class="si-text">
                                                         <div class="product-selected">
-                                                            <p>$60.00 x 1</p>
-                                                            <h6>Kabino Bedside Table</h6>
+                                                            <p>$114.22 <br />x1</p>
+                                                            <h6>MX Master 2S</h6>
                                                         </div>
                                                     </td>
                                                     <td class="si-close">
@@ -53,12 +53,12 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="si-pic">
-                                                        <img src="img/select-product-2.jpg" alt="" />
+                                                        <img src="img/headphone3.png" alt="" />
                                                     </td>
                                                     <td class="si-text">
                                                         <div class="product-selected">
-                                                            <p>$60.00 x 1</p>
-                                                            <h6>Kabino Bedside Table</h6>
+                                                            <p>$60.00 <br />x1</p>
+                                                            <h6>Steelseries X7</h6>
                                                         </div>
                                                     </td>
                                                     <td class="si-close">
