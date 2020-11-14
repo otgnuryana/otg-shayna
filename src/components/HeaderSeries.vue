@@ -53,7 +53,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="si-pic">
-                                                        <img src="img/productsheadphone3.png" alt="" />
+                                                        <img src="img/products/headphone3.png" alt="" />
                                                     </td>
                                                     <td class="si-text">
                                                         <div class="product-selected">
