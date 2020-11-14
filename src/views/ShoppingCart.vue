@@ -40,9 +40,9 @@
                                                 <img src="img/cart-page/product-1.jpg" />
                                             </td>
                                             <td class="cart-title first-row text-center">
-                                                <h5>Pure Pineapple</h5>
+                                                <h5>Aerox 3</h5>
                                             </td>
-                                            <td class="p-price first-row">$60.00</td>
+                                            <td class="p-price first-row">$69.99</td>
                                             <td class="delete-item">
                                                 <a href="#"><i class="material-icons"> close </i></a>
                                             </td>
@@ -52,9 +52,9 @@
                                                 <img src="img/cart-page/product-1.jpg" />
                                             </td>
                                             <td class="cart-title first-row text-center">
-                                                <h5>Pure Pineapple</h5>
+                                                <h5>Arctis 9 Wireless</h5>
                                             </td>
-                                            <td class="p-price first-row">$60.00</td>
+                                            <td class="p-price first-row">$199.99</td>
                                             <td class="delete-item">
                                                 <a href="#"><i class="material-icons"> close </i></a>
                                             </td>

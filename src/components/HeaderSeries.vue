@@ -39,12 +39,12 @@
                                             <tbody>
                                                 <tr>
                                                     <td class="si-pic">
-                                                        <img src="img/mouse5.png" alt="" />
+                                                        <img src="img/products/mouse5.png" alt="" />
                                                     </td>
                                                     <td class="si-text">
                                                         <div class="product-selected">
-                                                            <p>$114.22 <br />x1</p>
-                                                            <h6>MX Master 2S</h6>
+                                                            <p>$69.99 <br />x1</p>
+                                                            <h6>Sensei Ten</h6>
                                                         </div>
                                                     </td>
                                                     <td class="si-close">
@@ -53,12 +53,12 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="si-pic">
-                                                        <img src="img/headphone3.png" alt="" />
+                                                        <img src="img/productsheadphone3.png" alt="" />
                                                     </td>
                                                     <td class="si-text">
                                                         <div class="product-selected">
-                                                            <p>$60.00 <br />x1</p>
-                                                            <h6>Steelseries X7</h6>
+                                                            <p>$199.99 <br />x1</p>
+                                                            <h6>Arctis 9 Wireless</h6>
                                                         </div>
                                                     </td>
                                                     <td class="si-close">
@@ -70,7 +70,7 @@
                                     </div>
                                     <div class="select-total">
                                         <span>total:</span>
-                                        <h5>$120.00</h5>
+                                        <h5>$380.99</h5>
                                     </div>
                                     <div class="select-button">
                                         <a href="#" class="primary-btn view-card">VIEW CARD</a>
