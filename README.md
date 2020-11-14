@@ -1,4 +1,4 @@
-# Shayna Store make with VUE JS
+# X-Series Gaming Gear Store make with VUE JS
 
 ## Project setup
 ```
