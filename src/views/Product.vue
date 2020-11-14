@@ -1,6 +1,6 @@
 <template>
 <div class="product">
-    <HeaderShayna />
+    <HeaderSeries />
     <!-- Breadcrumb Section Begin -->
     <div class="breadcrumb-section text-left">
         <div class="container">
@@ -49,33 +49,36 @@
                         <div class="col-lg-6">
                             <div class="product-details text-left">
                                 <div class="pd-title">
-                                    <span>oranges</span>
-                                    <h3>Pure Pineapple</h3>
+                                    <span>SteelSeries</span>
+                                    <h3>AEROX 3</h3>
                                 </div>
                                 <div class="pd-desc">
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Corporis, error officia. Rem aperiam laborum voluptatum
-                                        vel, pariatur modi hic provident eum iure natus quos non a
-                                        sequi, id accusantium! Autem.
+                                        Ultra lightweight (AKA super lightweight) mice are
+                                        addictive. They allow gamers to flick them around at
+                                        lightning speeds, which provides a huge edge in fast-paced
+                                        games, and also removes a lot of strain. However,
+                                        durability has been a major issue for ultra lightweight
+                                        mice, from liquid damage, to dust, to static shocks, and
+                                        more.
                                     </p>
                                     <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                        Quam possimus quisquam animi, commodi, nihil voluptate
-                                        nostrum neque architecto illo officiis doloremque et
-                                        corrupti cupiditate voluptatibus error illum. Commodi
-                                        expedita animi nulla aspernatur. Id asperiores blanditiis,
-                                        omnis repudiandae iste inventore cum, quam sint molestiae
-                                        accusamus voluptates ex tempora illum sit perspiciatis.
-                                        Nostrum dolor tenetur amet, illo natus magni veniam quia
-                                        sit nihil dolores. Commodi ratione distinctio harum
-                                        voluptatum velit facilis voluptas animi non laudantium, id
-                                        dolorem atque perferendis enim ducimus? A exercitationem
-                                        recusandae aliquam quod. Itaque inventore obcaecati, unde
-                                        quam impedit praesentium veritatis quis beatae ea atque
-                                        perferendis voluptates velit architecto?
+                                        The most noticible lightweight feature of Aerox is the
+                                        perforated outer casing, with over 200 holes cut into the
+                                        top and bottom of the mouse. This holey design shaves off
+                                        about 18g of weight from the case alone, and allows the
+                                        interior RGB to shine brighter than ever.
                                     </p>
-                                    <h4>$495.00</h4>
+                                    <h5>AquaBarrier™ Protection</h5>
+                                    <br />
+                                    <p>
+                                        Engineered to safeguard the interior circuitry from
+                                        virtually all types of environmental damage, Aerox is the
+                                        first ever gaming mouse to receive an IP54 rating,
+                                        providing water resistance and protection from dust, dirt,
+                                        oil, fur, and more.
+                                    </p>
+                                    <h4>$69.99</h4>
                                 </div>
                                 <div class="quantity">
                                     <router-link to="/cart" class="primary-btn pd-cart">Add To Cart</router-link>
@@ -88,26 +91,26 @@
         </div>
     </section>
     <!-- Product Shop Section End -->
-    <RelatedShayna />
-    <FooterShayna />
+    <RelatedSeries />
+    <FooterSeries />
 </div>
 </template>
 
 <script>
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
-import HeaderShayna from "@/components/HeaderShayna.vue";
+import HeaderSeries from "@/components/HeaderSeries.vue";
 import carousel from "vue-owl-carousel";
-import RelatedShayna from "@/components/RelatedShayna.vue";
-import FooterShayna from "@/components/FooterShayna.vue";
+import RelatedSeries from "@/components/RelatedSeries.vue";
+import FooterSeries from "@/components/FooterSeries.vue";
 
 export default {
     name: "product",
     components: {
-        HeaderShayna,
+        HeaderSeries,
         carousel,
-        RelatedShayna,
-        FooterShayna,
+        RelatedSeries,
+        FooterSeries,
     },
     data() {
         return {

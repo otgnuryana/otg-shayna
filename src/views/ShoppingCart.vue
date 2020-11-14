@@ -1,6 +1,6 @@
 <template>
 <div class="shopping">
-    <HeaderShayna />
+    <HeaderSeries />
 
     <!-- Breadcrumb Section Begin -->
     <div class="breacrumb-section">
@@ -108,7 +108,7 @@
                                         No. Rekening <span>2208 1996 1403</span>
                                     </li>
                                     <li class="subtotal mt-3">
-                                        Nama Penerima <span>Shayna</span>
+                                        Nama Penerima <span>Series</span>
                                     </li>
                                 </ul>
                                 <router-link to="/success" class="proceed-btn">I ALREADY PAID</router-link>
@@ -124,12 +124,12 @@
 </template>
 
 <script>
-import HeaderShayna from "@/components/HeaderShayna.vue";
+import HeaderSeries from "@/components/HeaderSeries.vue";
 
 export default {
     name: "ShoppingCart",
     components: {
-        HeaderShayna,
+        HeaderSeries,
     },
 };
 </script>
