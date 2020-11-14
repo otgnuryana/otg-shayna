@@ -12,7 +12,7 @@
                                 <img src="img/products/mouse1.png" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                        <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
                                     <li class="quick-view">
                                         <router-link to="/product">+ Quick View</router-link>
@@ -35,14 +35,14 @@
                                 <img src="img/products/mouse2.png" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                        <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
                                     <li class="quick-view"><a href="#">+ Quick View</a></li>
                                 </ul>
                             </div>
                             <div class="pi-text">
                                 <div class="catagory-name">Steelseries</div>
-                                <a href="#">
+                                <a href="/#/Product">
                                     <h5>Sensei 310</h5>
                                 </a>
                                 <div class="product-price">$69.99</div>
@@ -53,14 +53,14 @@
                                 <img src="img/products/mouse3.png" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                        <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
                                     <li class="quick-view"><a href="#">+ Quick View</a></li>
                                 </ul>
                             </div>
                             <div class="pi-text">
                                 <div class="catagory-name">SteelSeries</div>
-                                <a href="#">
+                                <a href="/#/Product">
                                     <h5>Rival 3</h5>
                                 </a>
                                 <div class="product-price">$39.99</div>
@@ -71,17 +71,17 @@
                                 <img src="img/products/mouse4.png" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                        <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
                                     <li class="quick-view"><a href="#">+ Quick View</a></li>
                                     <li class="w-icon">
-                                        <a href="#"><i class="fa fa-random"></i></a>
+                                        <a href="/#/Product"><i class="fa fa-random"></i></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="pi-text">
                                 <div class="catagory-name">SteelSeries</div>
-                                <a href="#">
+                                <a href="/#/Product">
                                     <h5>Rival 600</h5>
                                 </a>
                                 <div class="product-price">$89.99</div>
@@ -92,11 +92,11 @@
                                 <img src="img/products/mouse5.png" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                        <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
                                     <li class="quick-view"><a href="#">+ Quick View</a></li>
                                     <li class="w-icon">
-                                        <a href="#"><i class="fa fa-random"></i></a>
+                                        <a href="/#/Product"><i class="fa fa-random"></i></a>
                                     </li>
                                 </ul>
                             </div>
@@ -113,17 +113,17 @@
                                 <img src="img/products/mouse6.png" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                        <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
                                     <li class="quick-view"><a href="#">+ Quick View</a></li>
                                     <li class="w-icon">
-                                        <a href="#"><i class="fa fa-random"></i></a>
+                                        <a href="/#/Product"><i class="fa fa-random"></i></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="pi-text">
                                 <div class="catagory-name">SteelSeries</div>
-                                <a href="#">
+                                <a href="/#/Product">
                                     <h5>Rival 500</h5>
                                 </a>
                                 <div class="product-price">$87.99</div>
