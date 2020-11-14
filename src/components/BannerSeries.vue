@@ -37,7 +37,7 @@
                                     <li class="w-icon active">
                                         <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                    <router-link to="/product">+ Quick View</router-link>
                                 </ul>
                             </div>
                             <div class="pi-text">
@@ -55,7 +55,7 @@
                                     <li class="w-icon active">
                                         <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                    <router-link to="/product">+ Quick View</router-link>
                                 </ul>
                             </div>
                             <div class="pi-text">
@@ -73,7 +73,7 @@
                                     <li class="w-icon active">
                                         <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                    <router-link to="/product">+ Quick View</router-link>
                                     <li class="w-icon">
                                         <a href="/#/Product"><i class="fa fa-random"></i></a>
                                     </li>
@@ -94,7 +94,7 @@
                                     <li class="w-icon active">
                                         <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                    <router-link to="/product">+ Quick View</router-link>
                                     <li class="w-icon">
                                         <a href="/#/Product"><i class="fa fa-random"></i></a>
                                     </li>
@@ -115,7 +115,7 @@
                                     <li class="w-icon active">
                                         <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                    <router-link to="/product">+ Quick View</router-link>
                                     <li class="w-icon">
                                         <a href="/#/Product"><i class="fa fa-random"></i></a>
                                     </li>
@@ -147,7 +147,7 @@
                                 <img src="img/products/headphone1.png" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                        <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
                                     <li class="quick-view">
                                         <router-link to="/product">+ Quick View</router-link>
@@ -170,14 +170,14 @@
                                 <img src="img/products/headphone2.png" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                        <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                    <router-link to="/product">+ Quick View</router-link>
                                 </ul>
                             </div>
                             <div class="pi-text">
                                 <div class="catagory-name">Arctis</div>
-                                <a href="#">
+                                <a href="/#/Product">
                                     <h5>Arctis 7x Wireless</h5>
                                 </a>
                                 <div class="product-price">$179.99</div>
@@ -188,14 +188,14 @@
                                 <img src="img/products/headphone3.png" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                        <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                    <router-link to="/product">+ Quick View</router-link>
                                 </ul>
                             </div>
                             <div class="pi-text">
                                 <div class="catagory-name">Arctis</div>
-                                <a href="#">
+                                <a href="/#/Product">
                                     <h5>Arctis 9 Wireless</h5>
                                 </a>
                                 <div class="product-price">$199.99</div>
@@ -206,17 +206,17 @@
                                 <img src="img/products/headphone4.png" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                        <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                    <router-link to="/product">+ Quick View</router-link>
                                     <li class="w-icon">
-                                        <a href="#"><i class="fa fa-random"></i></a>
+                                        <a href="/#/Product"><i class="fa fa-random"></i></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="pi-text">
                                 <div class="catagory-name">Arctis Pro</div>
-                                <a href="#">
+                                <a href="/#/Product">
                                     <h5>Arctis Pro Wireless White</h5>
                                 </a>
                                 <div class="product-price">$349.99</div>
@@ -227,17 +227,17 @@
                                 <img src="img/products/headphone5.png" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                        <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                    <router-link to="/product">+ Quick View</router-link>
                                     <li class="w-icon">
-                                        <a href="#"><i class="fa fa-random"></i></a>
+                                        <a href="/#/Product"><i class="fa fa-random"></i></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="pi-text">
                                 <div class="catagory-name">Arctis Pro</div>
-                                <a href="#">
+                                <a href="/#/Product">
                                     <h5>Arctis Pro</h5>
                                 </a>
                                 <div class="product-price">$199.99</div>
@@ -248,17 +248,17 @@
                                 <img src="img/products/headphone6.png" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                        <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                    <router-link to="/product">+ Quick View</router-link>
                                     <li class="w-icon">
-                                        <a href="#"><i class="fa fa-random"></i></a>
+                                        <a href="/#/Product"><i class="fa fa-random"></i></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="pi-text">
                                 <div class="catagory-name">Arctis</div>
-                                <a href="#">
+                                <a href="/#/Product">
                                     <h5>Arctis 5 Black</h5>
                                 </a>
                                 <div class="product-price">$99.99</div>
@@ -282,7 +282,7 @@
                                 <img src="img/products/keyboard1.png" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                        <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
                                     <li class="quick-view">
                                         <router-link to="/product">+ Quick View</router-link>
@@ -305,14 +305,14 @@
                                 <img src="img/products/keyboard2.png" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                        <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                    <router-link to="/product">+ Quick View</router-link>
                                 </ul>
                             </div>
                             <div class="pi-text">
                                 <div class="catagory-name">Apex Series</div>
-                                <a href="#">
+                                <a href="/#/Product">
                                     <h5>Apex Pro TKL</h5>
                                 </a>
                                 <div class="product-price">$189.99</div>
@@ -323,14 +323,14 @@
                                 <img src="img/products/keyboard3.png" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                        <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                    <router-link to="/product">+ Quick View</router-link>
                                 </ul>
                             </div>
                             <div class="pi-text">
                                 <div class="catagory-name">Apex Series</div>
-                                <a href="#">
+                                <a href="/#/Product">
                                     <h5>Apex TKL 7 Brown Switch</h5>
                                 </a>
                                 <div class="product-price">$199.99</div>
@@ -341,17 +341,17 @@
                                 <img src="img/products/keyboard4.png" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                        <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                    <router-link to="/product">+ Quick View</router-link>
                                     <li class="w-icon">
-                                        <a href="#"><i class="fa fa-random"></i></a>
+                                        <a href="/#/Product"><i class="fa fa-random"></i></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="pi-text">
                                 <div class="catagory-name">Apex Series</div>
-                                <a href="#">
+                                <a href="/#/Product">
                                     <h5>Apex 7 Brown Switch</h5>
                                 </a>
                                 <div class="product-price">$169.99</div>
@@ -362,17 +362,17 @@
                                 <img src="img/products/keyboard5.png" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                        <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                    <router-link to="/product">+ Quick View</router-link>
                                     <li class="w-icon">
-                                        <a href="#"><i class="fa fa-random"></i></a>
+                                        <a href="/#/Product"><i class="fa fa-random"></i></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="pi-text">
                                 <div class="catagory-name">Apex Series</div>
-                                <a href="#">
+                                <a href="/#/Product">
                                     <h5>Apex 7 Blue Switch</h5>
                                 </a>
                                 <div class="product-price">$179.99</div>
@@ -383,17 +383,17 @@
                                 <img src="img/products/keyboard6.png" alt="" />
                                 <ul>
                                     <li class="w-icon active">
-                                        <a href="#"><i class="icon_bag_alt"></i></a>
+                                        <a href="/#/Product"><i class="icon_bag_alt"></i></a>
                                     </li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                    <router-link to="/product">+ Quick View</router-link>
                                     <li class="w-icon">
-                                        <a href="#"><i class="fa fa-random"></i></a>
+                                        <a href="/#/Product"><i class="fa fa-random"></i></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="pi-text">
                                 <div class="catagory-name">Apex Series</div>
-                                <a href="#">
+                                <a href="/#/Product">
                                     <h5>Apex 5</h5>
                                 </a>
                                 <div class="product-price">$119.99</div>
