@@ -24,24 +24,12 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="product-pic-zoom">
-                                <img class="product-big-img" :src="gambar_default" alt="" />
+                                <img class="product-big-img" :src="'https://backend.otg-web.site/storage/'+gambar_default" alt="" />
                             </div>
-                            <div class="product-thumbs">
+                            <div class="product-thumbs" v-if="productDetails.galleries.length > 0">
                                 <carousel :dots="false" :nav="false" class="product-thumbs-track ps-slider">
-                                    <div class="pt" @click="changeImage(thumbs[0])" :class="thumbs[0] == gambar_default ? 'active' : ''">
-                                        <img src="img/view/view1.png" alt="" />
-                                    </div>
-
-                                    <div class="pt" @click="changeImage(thumbs[1])" :class="thumbs[1] == gambar_default ? 'active' : ''">
-                                        <img src="img/view/view2.png" alt="" />
-                                    </div>
-
-                                    <div class="pt" @click="changeImage(thumbs[2])" :class="thumbs[2] == gambar_default ? 'active' : ''">
-                                        <img src="img/view/view3.png" alt="" />
-                                    </div>
-
-                                    <div class="pt" @click="changeImage(thumbs[3])" :class="thumbs[3] == gambar_default ? 'active' : ''">
-                                        <img src="img/view/view4.png" alt="" />
+                                    <div v-for="ss in productDetails.galleries" :key="ss.id" class="pt" @click="changeImage(ss.photo)" :class="ss.photo[0] == gambar_default ? 'active' : ''">
+                                        <img :src="'https://backend.otg-web.site/storage/'+ss.photo" alt="" />
                                     </div>
                                 </carousel>
                             </div>
@@ -49,36 +37,12 @@
                         <div class="col-lg-6">
                             <div class="product-details text-left">
                                 <div class="pd-title">
-                                    <span>SteelSeries</span>
-                                    <h3>AEROX 3</h3>
+                                    <span>{{ productDetails.type }}</span>
+                                    <h3>{{ productDetails.name }}</h3>
                                 </div>
                                 <div class="pd-desc">
-                                    <p>
-                                        Ultra lightweight (AKA super lightweight) mice are
-                                        addictive. They allow gamers to flick them around at
-                                        lightning speeds, which provides a huge edge in fast-paced
-                                        games, and also removes a lot of strain. However,
-                                        durability has been a major issue for ultra lightweight
-                                        mice, from liquid damage, to dust, to static shocks, and
-                                        more.
-                                    </p>
-                                    <p>
-                                        The most noticible lightweight feature of Aerox is the
-                                        perforated outer casing, with over 200 holes cut into the
-                                        top and bottom of the mouse. This holey design shaves off
-                                        about 18g of weight from the case alone, and allows the
-                                        interior RGB to shine brighter than ever.
-                                    </p>
-                                    <h5>AquaBarrier™ Protection</h5>
-                                    <br />
-                                    <p>
-                                        Engineered to safeguard the interior circuitry from
-                                        virtually all types of environmental damage, Aerox is the
-                                        first ever gaming mouse to receive an IP54 rating,
-                                        providing water resistance and protection from dust, dirt,
-                                        oil, fur, and more.
-                                    </p>
-                                    <h4>$69.99</h4>
+                                    <p>{{ productDetails.description}}</p>
+                                    <h4>${{ productDetails.price }}.99</h4>
                                 </div>
                                 <div class="quantity">
                                     <router-link to="/cart" class="primary-btn pd-cart">Add To Cart</router-link>
@@ -103,6 +67,7 @@ import HeaderSeries from "@/components/HeaderSeries.vue";
 import carousel from "vue-owl-carousel";
 import RelatedSeries from "@/components/RelatedSeries.vue";
 import FooterSeries from "@/components/FooterSeries.vue";
+import axios from "axios";
 
 export default {
     name: "product",
@@ -114,19 +79,37 @@ export default {
     },
     data() {
         return {
-            gambar_default: "img/view/view1.png",
+            gambar_default: '',
             thumbs: [
                 "img/view/view1.png",
                 "img/view/view2.png",
                 "img/view/view3.png",
                 "img/view/view4.png",
             ],
+            productDetails:[]
         };
     },
     methods: {
         changeImage(urlImage) {
             this.gambar_default = urlImage;
         },
+        setDataPicture(data){
+            // replace object productDetails dengan data dari API
+            this.productDetails = data;
+            // replace value gambar default dengan data dari API (galleries)
+            this.gambar_default = data.galleries[0].photo
+        }
+    },
+    mounted() {
+        axios
+            .get("https://backend.otg-web.site/api/products", {
+                params: {
+                    id: this.$route.params.id
+                }   
+            })
+            .then(res => (this.setDataPicture(res.data.data)))
+            // eslint-disable-next-line no-console
+            .catch(err => console.log(err));
     },
 };
 </script>

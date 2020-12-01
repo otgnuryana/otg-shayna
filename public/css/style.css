@@ -2101,8 +2101,9 @@ ol {
 }
 
 .product-pic-zoom img {
-    min-width: 100%;
-    height: 800px;
+    max-width: 70%;
+    max-height: 100%;
+    border-radius: 300px;
 }
 
 .product-pic-zoom .zoom-icon {
@@ -4374,6 +4375,7 @@ ol {
 @media only screen and (max-width: 479px) {
     .instagram-photo .insta-item {
         width: 100%;
+        height: 450px;
     }
 
     .inner-header .advanced-search .category-btn {

@@ -2,7 +2,9 @@
 <div class="home">
     <HeaderSeries />
     <HeroSeries />
-    <BannerSeries />
+    <MouseSeries />
+    <HeadsetsSeries />
+    <KeyboardSeries />
     <InstaSeries />
     <PartnerSeries />
     <FooterSeries />
@@ -14,7 +16,9 @@
 // import HelloWorld from '@/components/HelloWorld.vue'
 import HeaderSeries from "@/components/HeaderSeries.vue";
 import HeroSeries from "@/components/HeroSeries.vue";
-import BannerSeries from "@/components/BannerSeries.vue";
+import MouseSeries from "@/components/products/MouseSeries.vue";
+import HeadsetsSeries from "@/components/products/HeadsetsSeries.vue";
+import KeyboardSeries from "@/components/products/KeyboardSeries.vue";
 import InstaSeries from "@/components/InstaSeries.vue";
 import PartnerSeries from "@/components/PartnerSeries.vue";
 import FooterSeries from "@/components/FooterSeries.vue";
@@ -24,7 +28,9 @@ export default {
     components: {
         HeaderSeries,
         HeroSeries,
-        BannerSeries,
+        MouseSeries,
+        HeadsetsSeries,
+        KeyboardSeries,
         InstaSeries,
         PartnerSeries,
         FooterSeries,
