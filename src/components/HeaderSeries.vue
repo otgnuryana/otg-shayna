@@ -31,50 +31,41 @@
                                 Shopping Cart &nbsp;
                                 <a href="#">
                                     <i class="icon_bag_alt"></i>
-                                    <span>3</span>
+                                    <span>{{ keranjangUser.length }}</span>
                                 </a>
                                 <div class="cart-hover">
                                     <div class="select-items">
                                         <table>
-                                            <tbody>
-                                                <tr>
+                                            <tbody v-if="keranjangUser.length > 0">
+                                                <tr v-for="keranjang in keranjangUser" :key="keranjang.id">
                                                     <td class="si-pic">
-                                                        <img src="img/products/mouse5.png" alt="" />
+                                                        <img :src="'https://backend.otg-web.site/storage/' + keranjang.photo" alt="" />
                                                     </td>
                                                     <td class="si-text">
                                                         <div class="product-selected">
-                                                            <p>$69.99 <br />x1</p>
-                                                            <h6>Sensei Ten</h6>
+                                                            <p>${{ keranjang.price }}.00 x1</p>
+                                                            <h6>{{ keranjang.name }}</h6>
                                                         </div>
                                                     </td>
-                                                    <td class="si-close">
+                                                    <td 
+                                                    @click="hapusItem(keranjang.id)"
+                                                    class="si-close">
                                                         <i class="ti-close"></i>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="si-pic">
-                                                        <img src="img/products/headphone3.png" alt="" />
-                                                    </td>
-                                                    <td class="si-text">
-                                                        <div class="product-selected">
-                                                            <p>$199.99 <br />x1</p>
-                                                            <h6>Arctis 9 Wireless</h6>
-                                                        </div>
-                                                    </td>
-                                                    <td class="si-close">
-                                                        <i class="ti-close"></i>
-                                                    </td>
-                                                </tr>
+                                                </tr>                                       
+                                            </tbody>
+                                            <tbody v-else class="text-center">
+                                                <p>Cart Kosong</p>
                                             </tbody>
                                         </table>
                                     </div>
                                     <div class="select-total">
                                         <span>total:</span>
-                                        <h5>$380.99</h5>
+                                        <h5>${{ totalHarga }}.00</h5>
                                     </div>
                                     <div class="select-button">
-                                        <a href="#" class="primary-btn view-card">VIEW CARD</a>
-                                        <a href="#" class="primary-btn checkout-btn">CHECK OUT</a>
+                                        <a href="/#/cart/" class="primary-btn view-card">VIEW CARD</a>
+                                        <a href="/#/cart/" class="primary-btn checkout-btn">CHECK OUT</a>
                                     </div>
                                 </div>
                             </li>
@@ -91,6 +82,41 @@
 <script>
 export default {
     name: "HeaderSeries",
+    data() {
+        return {
+            keranjangUser: []
+        }
+    },
+    methods: {
+        hapusItem(idx) {
+            // cari tahu id dari item yang akan di hapus
+            let keranjangUserStorage = JSON.parse(localStorage.getItem("keranjangUser"));
+            let itemKeranjangUserStorage = keranjangUserStorage.map(itemKeranjangUserStorage => itemKeranjangUserStorage.id);
+
+            // cocokan idx dengan id yang ada di local storage
+            let index = itemKeranjangUserStorage.findIndex(id => id == idx);
+            this.keranjangUser.splice(index, 1);
+
+            const parsed = JSON.stringify(this.keranjangUser);
+            localStorage.setItem("keranjangUser", parsed);
+        }
+    },
+    mounted() {
+        if (localStorage.getItem("keranjangUser")) {
+                try {
+                    this.keranjangUser = JSON.parse(localStorage.getItem("keranjangUser"));
+                } catch(e) {
+                    localStorage.removeItem("keranjangUser");
+                }
+            }
+    },
+    computed: {
+        totalHarga(){
+            return this.keranjangUser.reduce(function(items, data){
+                return items + data.price;
+            } ,0);
+        }
+    }
 };
 </script>
 

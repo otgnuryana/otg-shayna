@@ -14,7 +14,7 @@
                                 every gamer and they’re built for gaming precision with
                                 optical tracking sensors and hyper durable materials.
                             </p>
-                            <a href="#" class="primary-btn">Shop Now</a>
+                            <a href="#mouse" class="primary-btn">Shop Now</a>
                         </div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                                 key can be adjusted to meet your preferred sensitivity level,
                                 whether it’s for gaming, work, or anything else.
                             </p>
-                            <a href="#" class="primary-btn">Shop Now</a>
+                            <a href="#keyboard" class="primary-btn">Shop Now</a>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                                 Xbox Series X, PlayStation 4, Nintendo Switch, mobile, and
                                 more.
                             </p>
-                            <a href="#" class="primary-btn">Shop Now</a>
+                            <a href="#headset" class="primary-btn">Shop Now</a>
                         </div>
                     </div>
                 </div>
@@ -72,4 +72,7 @@ export default {
 </script>
 
 <style scoped>
+.primary-btn :hover{
+    background-color: rgb(255, 198, 93);
+}
 </style>

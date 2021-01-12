@@ -1,7 +1,7 @@
 <template>
 <div>
     <!-- Mouse Banner Section Begin -->
-    <section class="women-banner spad mt-5">
+    <section class="women-banner spad mt-5" id="mouse">
         <div class="container-fluid">
             <div class="row">
                 <h3>Gaming Mice</h3>
@@ -12,7 +12,11 @@
                                 <img v-bind:src="'https://backend.otg-web.site/storage/' + itemProduct.galleries[0].photo" alt="" />
                                 <ul class="sm-null">
                                     <li class="w-icon active">
-                                        <router-link v-bind:to="'/product/'+itemProduct.id"><i class="icon_bag_alt"></i></router-link>
+                                        <a 
+                                        @click="saveKeranjang(itemProduct.id, itemProduct.name, itemProduct.price, itemProduct.galleries[0].photo)"
+                                        href="#">
+                                        <i class="icon_bag_alt"></i>
+                                        </a>
                                     </li>
                                     <li class="quick-view">
                                         <router-link v-bind:to="'/product/'+itemProduct.id">+ Quick View</router-link>
@@ -25,8 +29,8 @@
                                     <h5>{{ itemProduct.name }}</h5>
                                 </router-link>
                                 <div class="product-price">
-                                    ${{ itemProduct.price }}.99
-                                    <span v-if="itemProduct.name == 'Aerox 3'">${{ itemProduct.price + 10 }}.99</span>
+                                    ${{ itemProduct.price }}.00
+                                    <span v-if="itemProduct.name == 'Aerox 3'">${{ parseInt(itemProduct.price) + 10 }}.00</span>
                                 </div>
                             </div>
                         </div>
@@ -57,7 +61,29 @@ export default {
             products: []
         };
     },
+    methods: {
+        saveKeranjang(idProduct, nameProduct, priceProduct, photoProduct) {
+            let productStored = {
+                "id" : idProduct,
+                "name" : nameProduct,               
+                "price" : parseInt(priceProduct),               
+                "photo" : photoProduct,               
+            }
+
+            this.keranjangUser.push(productStored);
+            const parsed = JSON.stringify(this.keranjangUser);
+            localStorage.setItem('keranjangUser', parsed);    
+            window.location.reload();    
+        },
+    },
     mounted() {
+        if (localStorage.getItem('keranjangUser')) {
+                try {
+                    this.keranjangUser = JSON.parse(localStorage.getItem('keranjangUser'));
+                } catch(e) {
+                    localStorage.removeItem('keranjangUser');
+                }
+            }
         axios
             .get("https://backend.otg-web.site/api/products?type=mouse")
             .then(res => (this.products = res.data.data.data))

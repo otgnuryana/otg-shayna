@@ -45,7 +45,7 @@
                                     <h4>${{ productDetails.price }}.99</h4>
                                 </div>
                                 <div class="quantity">
-                                    <router-link to="/cart" class="primary-btn pd-cart">Add To Cart</router-link>
+                                    <a href="/#/cart/" @click="saveKeranjang(productDetails.id, productDetails.name, productDetails.price, productDetails.galleries[0].photo)" class="primary-btn pd-cart">Add To Cart</a>
                                 </div>
                             </div>
                         </div>
@@ -80,13 +80,8 @@ export default {
     data() {
         return {
             gambar_default: '',
-            thumbs: [
-                "img/view/view1.png",
-                "img/view/view2.png",
-                "img/view/view3.png",
-                "img/view/view4.png",
-            ],
-            productDetails:[]
+            productDetails:[],
+            keranjangUser:[]
         };
     },
     methods: {
@@ -98,9 +93,29 @@ export default {
             this.productDetails = data;
             // replace value gambar default dengan data dari API (galleries)
             this.gambar_default = data.galleries[0].photo
-        }
+        },
+        saveKeranjang(idProduct, nameProduct, priceProduct, photoProduct) {
+            let productStored = {
+                "id" : idProduct,
+                "name" : nameProduct,               
+                "price" : parseInt(priceProduct),               
+                "photo" : photoProduct,               
+            }
+
+            this.keranjangUser.push(productStored);
+            const parsed = JSON.stringify(this.keranjangUser);
+            localStorage.setItem('keranjangUser', parsed);       
+        },
     },
+
     mounted() {
+        if (localStorage.getItem('keranjangUser')) {
+                try {
+                    this.keranjangUser = JSON.parse(localStorage.getItem('keranjangUser'));
+                } catch(e) {
+                    localStorage.removeItem('keranjangUser');
+                }
+            }
         axios
             .get("https://backend.otg-web.site/api/products", {
                 params: {
@@ -110,8 +125,10 @@ export default {
             .then(res => (this.setDataPicture(res.data.data)))
             // eslint-disable-next-line no-console
             .catch(err => console.log(err));
+            
     },
-};
+}
+
 </script>
 
 <style scoped>
