@@ -27,11 +27,10 @@
                                 </router-link>
                                 <div class="product-price">
                                     ${{ itemProduct.price }}.00
-                                    <span v-if="itemProduct.price > 200">${{ itemProduct.price + 100 }}.00</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="product-item" v-for="itemProduct in products" :key="itemProduct.id">
+                        
                             <div class="pi-pic">
                                 <img v-bind:src="'https://backend.otg-web.site/storage/' + itemProduct.galleries[0].photo" alt="" />
                                 <ul class="sm-null">
@@ -51,11 +50,10 @@
                                 </router-link>
                                 <div class="product-price">
                                     ${{ itemProduct.price }}.00
-                                    <span v-if="itemProduct.price > 200">${{ itemProduct.price + 100 }}.00</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="product-item" v-for="itemProduct in products" :key="itemProduct.id">
+                        
+                        
                             <div class="pi-pic">
                                 <img v-bind:src="'https://backend.otg-web.site/storage/' + itemProduct.galleries[0].photo" alt="" />
                                 <ul class="sm-null">
@@ -74,12 +72,11 @@
                                     <h5>{{ itemProduct.name }} - Blue Switch</h5>
                                 </router-link>
                                 <div class="product-price">
-                                    ${{ itemProduct.price }}.00
-                                    <span v-if="itemProduct.price > 200">${{ itemProduct.price + 100 }}.00</span>
+                                    ${{ itemProduct.price }}.00                                    
                                 </div>
                             </div>
-                        </div>
-                         <div class="product-item" v-for="itemProduct in products" :key="itemProduct.id">
+                        
+                         
                             <div class="pi-pic">
                                 <img v-bind:src="'https://backend.otg-web.site/storage/' + itemProduct.galleries[0].photo" alt="" />
                                 <ul class="sm-null">
@@ -98,8 +95,7 @@
                                     <h5>{{ itemProduct.name }} - Yellow Switch</h5>
                                 </router-link>
                                 <div class="product-price">
-                                    ${{ itemProduct.price }}.00
-                                    <span v-if="itemProduct.price > 200">${{ itemProduct.price + 100 }}.00</span>
+                                    ${{ itemProduct.price }}.00                                   
                                 </div>
                             </div>
                         </div>
