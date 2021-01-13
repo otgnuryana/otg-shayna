@@ -28,9 +28,9 @@
                                 <div class="product-price">
                                     ${{ itemProduct.price }}.00
                                 </div>
-                            </div>
-                        
-                        
+                            </div>                                              
+                        </div>
+                        <div class="product-item" v-for="itemProduct in products" :key="itemProduct.id">
                             <div class="pi-pic">
                                 <img v-bind:src="'https://backend.otg-web.site/storage/' + itemProduct.galleries[0].photo" alt="" />
                                 <ul class="sm-null">
@@ -51,9 +51,9 @@
                                 <div class="product-price">
                                     ${{ itemProduct.price }}.00
                                 </div>
-                            </div>
-                        
-                        
+                            </div>                                              
+                        </div>
+                        <div class="product-item" v-for="itemProduct in products" :key="itemProduct.id">
                             <div class="pi-pic">
                                 <img v-bind:src="'https://backend.otg-web.site/storage/' + itemProduct.galleries[0].photo" alt="" />
                                 <ul class="sm-null">
@@ -72,32 +72,9 @@
                                     <h5>{{ itemProduct.name }} - Blue Switch</h5>
                                 </router-link>
                                 <div class="product-price">
-                                    ${{ itemProduct.price }}.00                                    
+                                    ${{ itemProduct.price }}.00
                                 </div>
-                            </div>
-                        
-                         
-                            <div class="pi-pic">
-                                <img v-bind:src="'https://backend.otg-web.site/storage/' + itemProduct.galleries[0].photo" alt="" />
-                                <ul class="sm-null">
-                                    <li class="w-icon active">
-                                        <a @click="saveKeranjang(itemProduct.id, itemProduct.name, itemProduct.price, itemProduct.galleries[0].photo)"
-                                        href="#"><i class="icon_bag_alt"></i></a>
-                                    </li>
-                                    <li class="quick-view">
-                                        <router-link v-bind:to="'/product/'+itemProduct.id">+ Quick View</router-link>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="pi-text">
-                                <div class="catagory-name">Steelseries</div>
-                                <router-link v-bind:to="'/product/'+itemProduct.id">
-                                    <h5>{{ itemProduct.name }} - Yellow Switch</h5>
-                                </router-link>
-                                <div class="product-price">
-                                    ${{ itemProduct.price }}.00                                   
-                                </div>
-                            </div>
+                            </div>                                              
                         </div>
                     </carousel>
                 </div>
@@ -160,6 +137,7 @@ export default {
 <style scoped>
 .product-item {
     margin-right: 25px;
+    display: block;
 }
 
 .pi-pic img {
