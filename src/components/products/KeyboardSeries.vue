@@ -6,7 +6,7 @@
             <div class="row">
                 <h3>Keyboard Mechanical</h3>
                 <div class="col-lg-12 mt-5" v-if="products.length >= 0">
-                    <carousel class="product-slider product-flex" :autoplay="true" :dots="false" :nav="false">
+                    <carousel class="product-slider" :autoplay="true" :dots="false" :nav="false">
                         <div class="product-item" v-for="itemProduct in products" :key="itemProduct.id">
                             <div class="pi-pic">
                                 <img v-bind:src="'https://backend.otg-web.site/storage/' + itemProduct.galleries[0].photo" alt="" />
@@ -29,53 +29,7 @@
                                     ${{ itemProduct.price }}.00
                                 </div>
                             </div>                                              
-                        </div>
-                        <div class="product-item" v-for="itemProduct in products" :key="itemProduct.id">
-                            <div class="pi-pic">
-                                <img v-bind:src="'https://backend.otg-web.site/storage/' + itemProduct.galleries[0].photo" alt="" />
-                                <ul class="sm-null">
-                                    <li class="w-icon active">
-                                        <a @click="saveKeranjang(itemProduct.id, itemProduct.name, itemProduct.price, itemProduct.galleries[0].photo)"
-                                        href="#"><i class="icon_bag_alt"></i></a>
-                                    </li>
-                                    <li class="quick-view">
-                                        <router-link v-bind:to="'/product/'+itemProduct.id">+ Quick View</router-link>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="pi-text">
-                                <div class="catagory-name">Steelseries</div>
-                                <router-link v-bind:to="'/product/'+itemProduct.id">
-                                    <h5>{{ itemProduct.name }} - Red Switch</h5>
-                                </router-link>
-                                <div class="product-price">
-                                    ${{ itemProduct.price }}.00
-                                </div>
-                            </div>                                              
-                        </div>
-                        <div class="product-item" v-for="itemProduct in products" :key="itemProduct.id">
-                            <div class="pi-pic">
-                                <img v-bind:src="'https://backend.otg-web.site/storage/' + itemProduct.galleries[0].photo" alt="" />
-                                <ul class="sm-null">
-                                    <li class="w-icon active">
-                                        <a @click="saveKeranjang(itemProduct.id, itemProduct.name, itemProduct.price, itemProduct.galleries[0].photo)"
-                                        href="#"><i class="icon_bag_alt"></i></a>
-                                    </li>
-                                    <li class="quick-view">
-                                        <router-link v-bind:to="'/product/'+itemProduct.id">+ Quick View</router-link>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="pi-text">
-                                <div class="catagory-name">Steelseries</div>
-                                <router-link v-bind:to="'/product/'+itemProduct.id">
-                                    <h5>{{ itemProduct.name }} - Blue Switch</h5>
-                                </router-link>
-                                <div class="product-price">
-                                    ${{ itemProduct.price }}.00
-                                </div>
-                            </div>                                              
-                        </div>
+                        </div>                                                                    
                     </carousel>
                 </div>
                 <div class="col-lg-12" v-else>
@@ -137,10 +91,6 @@ export default {
 <style scoped>
 .product-item {
     margin-right: 25px;
-}
-
-.product-flex {
-    display: flex;
 }
 
 .pi-pic img {
