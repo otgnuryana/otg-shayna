@@ -5,7 +5,7 @@
         <div class="container-fluid">
             <div class="row">
                 <h3>Keyboard Mechanical</h3>
-                <div class="col-lg-12 mt-5" v-if="products.length > 0">
+                <div class="col-lg-12 mt-5" v-if="products.length >= 0">
                     <carousel class="product-slider" :autoplay="true" :dots="false" :nav="false">
                         <div class="product-item" v-for="itemProduct in products" :key="itemProduct.id">
                             <div class="pi-pic">
