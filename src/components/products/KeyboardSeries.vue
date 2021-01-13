@@ -6,7 +6,7 @@
             <div class="row">
                 <h3>Keyboard Mechanical</h3>
                 <div class="col-lg-12 mt-5" v-if="products.length >= 0">
-                    <carousel class="product-slider" :autoplay="true" :dots="false" :nav="false">
+                    <carousel class="product-slider product-flex" :autoplay="true" :dots="false" :nav="false">
                         <div class="product-item" v-for="itemProduct in products" :key="itemProduct.id">
                             <div class="pi-pic">
                                 <img v-bind:src="'https://backend.otg-web.site/storage/' + itemProduct.galleries[0].photo" alt="" />
@@ -137,7 +137,10 @@ export default {
 <style scoped>
 .product-item {
     margin-right: 25px;
-    display: block;
+}
+
+.product-flex {
+    display: flex;
 }
 
 .pi-pic img {
