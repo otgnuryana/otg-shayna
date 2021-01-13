@@ -165,7 +165,7 @@ export default {
             }
             axios
                 .post(
-                    "http://backend.otg-web.site/api/checkout",
+                    "https://backend.otg-web.site/api/checkout",
                     checkoutData
                 )
                 .then(() => this.$router.push("success"))
