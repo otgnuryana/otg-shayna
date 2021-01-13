@@ -29,7 +29,7 @@
                                     ${{ itemProduct.price }}.00
                                 </div>
                             </div>
-                        </div>
+                        
                         
                             <div class="pi-pic">
                                 <img v-bind:src="'https://backend.otg-web.site/storage/' + itemProduct.galleries[0].photo" alt="" />
